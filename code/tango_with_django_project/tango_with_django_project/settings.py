@@ -26,8 +26,11 @@ TEMPLATE_DEBUG = True
 
 ALLOWED_HOSTS = []
 
+TEMPLATE_PATHS = os.path.join(BASE_DIR, 'templates')
 
 # Application definition
+
+TEMPLATE_DIRS = (TEMPLATE_PATHS,)
 
 INSTALLED_APPS = (
     'django.contrib.admin',
